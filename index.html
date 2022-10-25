@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab 5 Bondarenko IP-96</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class = "registration">
+        <form class="formRegistration">
+            <label for="fname">ПІБ:</label>
+            <input type="text" id="name" name="name">
+            <label for="fname">Група:</label>
+            <input type="text" id="group" name="group">
+            <label for="fname">Телефон:</label>
+            <input type="text" id="phone" name="phone">
+            <label for="fname">ID кард:</label>
+            <input type="text" id="idCard" name="idCard">
+            <label for="fname">Факультет:</label>
+            <input type="text" id="facultati" name="facultati">
+            <button  type="button" onclick = "checkWithRegularExpression()">Відправити</button>
+        </form>
+        <div class="blockWithInformation">
+            <h2>Ввеведені данні</h2>
+            <div class="rowInIfoBlock">
+                <strong >ПІБ:</strong>
+                <div id = "nameInfo"></div>
+            </div>
+            <div class="rowInIfoBlock">
+                <strong>Група:</strong>
+                <div id = "groupInfo"></div>
+            </div>
+            <div class="rowInIfoBlock">
+                <strong>Телефон:</strong>
+                <div id = "phoneInfo"></div>
+            </div>
+            <div class="rowInIfoBlock">
+                <strong>ID кард:</strong>
+                <div id = "idCardInfo"></div>
+            </div>
+            <div class="rowInIfoBlock">
+                <strong>Факультет:</strong>
+                <div id = "facultatiInfo"></div>
+            </div>
+        </div>  
+    </div>
+
+
+    <div id = "tableWithNum">
+      <div class = "row">
+        <div class = "cell">
+          <input id="input1" class="column1" type="color"  value="#ffffff"> 
+          <span onclick="coloredCell('input1')" ondblclick="coloredColomn('column1')">1</span>
+        </div>
+        <div class = "cell">
+          <input id="input2" class="column2" type="color"  value="#ffffff"> 
+          <span onclick="coloredCell('input2')" ondblclick="coloredColomn('column2')" onmouseover="onHover('input2')">2</span>
+        </div>
+        <div class = "cell">
+          <input id="input3" class="column3" type="color" value="#ffffff"> 
+          <span onclick="coloredCell('input3')" ondblclick="coloredColomn('column3')">3</span>
+        </div>
+        <div class = "cell">
+          <input id="input4" class="column4" type="color"  value="#ffffff"> 
+          <span onclick="coloredCell('input4')" ondblclick="coloredColomn('column4')">4</span>
+        </div>
+        <div class = "cell">
+          <input id="input5" class="column5" type="color"  value="#ffffff"> 
+          <span onclick="coloredCell('input5')" ondblclick="coloredColomn('column5')">5</span>
+        </div>
+        <div class = "cell" >
+          <input id="input6" class="column6" type="color"  value="#ffffff" onclick="coloredCell(this)" ondblclick="coloredColomn()"> 
+          <span onclick="coloredCell('input6')" ondblclick="coloredColomn('column6')">6</span>
+        </div>
+    </div>
+      <div class = "row">
+        <div class = "cell">
+          <input id="input7" class="column1" type="color"  value="#ffffff"> 
+          <span onclick="coloredCell('input7')" ondblclick="coloredColomn('column1')">7</span>
+        </div>
+        <div class = "cell">
+          <input id="input8" class="column2" type="color"  value="#ffffff"> 
+          <span onclick="coloredCell('input8')" ondblclick="coloredColomn('column2')">8</span>
+        </div>
+        <div class = "cell">
+          <input id="input9" class="column3" type="color" value="#ffffff"> 
+          <span onclick="coloredCell('input9')" ondblclick="coloredColomn('column3')">9</span>
+        </div>
+        <div class = "cell">
+          <input id="input10" class="column4" type="color"  value="#ffffff"> 
+          <span onclick="coloredCell('input10')" ondblclick="coloredColomn('column4')">10</span>
+        </div>
+        <div class = "cell">
+          <input id="input11" class="column5" type="color"  value="#ffffff"> 
+          <span onclick="coloredCell('input1')" ondblclick="coloredColomn('column5')">11</span>
+        </div>
+        <div class = "cell">
+          <input id="input12" class="column6" type="color"  value="#ffffff"> 
+          <span onclick="coloredCell('input12')" ondblclick="coloredColomn('column6')">12</span>
+        </div>
+    </div>
+    <div class = "row">
+      <div class = "cell">
+        <input id="input13" class="column1" type="color"  value="#ffffff"> 
+        <span onclick="coloredCell('input13')" ondblclick="coloredColomn('column1')">13</span>
+      </div>
+      <div class = "cell">
+        <input id="input14" class="column2" type="color"  value="#ffffff"> 
+        <span onclick="coloredCell('input14')" ondblclick="coloredColomn('column2')">14</span>
+      </div>
+      <div class = "cell">
+        <input id="input15" class="column3" type="color" value="#ffffff"> 
+        <span onclick="coloredCell('input15')" ondblclick="coloredColomn('column3')">15</span>
+      </div>
+      <div class = "cell">
+        <input id="input16" class="column4" type="color"  value="#ffffff"> 
+        <span onclick="coloredCell('input16')" ondblclick="coloredColomn('column4')">16</span>
+      </div>
+      <div class = "cell">
+        <input id="input17" class="column5" type="color" value="#ffffff"> 
+        <span onclick="coloredCell('input17')" ondblclick="coloredColomn('column5')">17</span>
+      </div>
+      <div class = "cell">
+        <input id="input18" class="column6" type="color"  value="#ffffff"> 
+        <span onclick="coloredCell('input18')" ondblclick="coloredColomn('column6')">18</span>
+      </div>
+  </div>
+  <div class = "row">
+    <div class = "cell">
+      <input id="input19" class="column1" type="color"  value="#ffffff"> 
+      <span onclick="coloredCell('input19')" ondblclick="coloredColomn('column1')">19</span>
+    </div>
+    <div class = "cell">
+      <input id="input20" class="column2" type="color"  value="#ffffff"> 
+      <span onclick="coloredCell('input20')" ondblclick="coloredColomn('column2')">20</span>
+    </div>
+    <div class = "cell">
+      <input id="input21" class="column3" type="color"value="#ffffff"> 
+      <span onclick="coloredCell('input21')" ondblclick="coloredColomn('column3')">21</span>
+    </div>
+    <div class = "cell">
+      <input id="input22" class="column4" type="color"  value="#ffffff"> 
+      <span onclick="coloredCell('input22')" ondblclick="coloredColomn('column4')">22</span>
+    </div>
+    <div class = "cell">
+      <input id="input23" class="column5" type="color"  value="#ffffff"> 
+      <span onclick="coloredCell('input23')" ondblclick="coloredColomn('column5')">23</span>
+    </div>
+    <div class = "cell">
+      <input id="input24" class="column6" type="color"  value="#ffffff"> 
+      <span onclick="coloredCell('input24')" ondblclick="coloredColomn('column6')">24</span>
+    </div>
+</div>
+<div class = "row">
+  <div class = "cell">
+    <input id="input25" class="column1" type="color"  value="#ffffff"> 
+    <span onclick="coloredCell('input25')" ondblclick="coloredColomn('column1')">25</span>
+  </div>
+  <div class = "cell">
+    <input id="input26" class="column2" type="color"  value="#ffffff"> 
+    <span onclick="coloredCell('input26')" ondblclick="coloredColomn('column2')">26</span>
+  </div>
+  <div class = "cell">
+    <input id="input27" class="column3" type="color"value="#ffffff"> 
+    <span onclick="coloredCell('input27')" ondblclick="coloredColomn('column3')">27</span>
+  </div>
+  <div class = "cell">
+    <input id="input28" class="column4" type="color"  value="#ffffff"> 
+    <span onclick="coloredCell('input28')" ondblclick="coloredColomn('column4')">28</span>
+  </div>
+  <div class = "cell">
+    <input id="input29" class="column5" type="color"  value="#ffffff"> 
+    <span onclick="coloredCell('input29')" ondblclick="coloredColomn('column5')">29</span>
+  </div>
+  <div class = "cell">
+    <input id="input30" class="column6" type="color"  value="#ffffff"> 
+    <span onclick="coloredCell('input30')" ondblclick="coloredColomn('column6')">30</span>
+  </div>
+</div>
+<div class = "row">
+  <div class = "cell">
+    <input id="input31" class="column1" type="color"  value="#ffffff"> 
+    <span onclick="coloredCell('input31')" ondblclick="coloredColomn('column1')">31</span>
+  </div>
+  <div class = "cell">
+    <input id="input32" class="column2" type="color"  value="#ffffff"> 
+    <span onclick="coloredCell('input32')" ondblclick="coloredColomn('column2')">32</span>
+  </div>
+  <div class = "cell">
+    <input id="input33" class="column3" type="color"value="#ffffff"> 
+    <span onclick="coloredCell('input33')" ondblclick="coloredColomn('column3')">33</span>
+  </div>
+  <div class = "cell">
+    <input id="input34" class="column4" type="color"  value="#ffffff"> 
+    <span onclick="coloredCell('input34')" ondblclick="coloredColomn('column4')">34</span>
+  </div>
+  <div class = "cell">
+    <input id="input35" class="column5" type="color"  value="#ffffff"> 
+    <span onclick="coloredCell('input35')" ondblclick="coloredColomn('column5')">35</span>
+  </div>
+  <div class = "cell">
+    <input id="input36" class="column6" type="color"  value="#ffffff"> 
+    <span onclick="coloredCell('input36')" ondblclick="coloredColomn('column6')">36</span>
+  </div>
+</div>
+
+    
+    </div>
+</body>
+</html>
